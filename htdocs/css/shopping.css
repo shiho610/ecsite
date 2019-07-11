@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+/* 共通部分
+-------------------------*/
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    font-family: Verdana, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    font-size: 18px;
+    color: #432;
+    text-align: center;
+}
+h1 {
+    text-align: left;
+    margin-left: 5%;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.message p {
+    margin: 5%;
+    font-size: 20px;
+    text-align: left;
+}
+.red {
+    color: indianred;
+}
+.button {
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* header
+-------------------------*/
+header {
+    background: lightblue;
+    height: 130px;
+    line-height: 130px;
+    color: white;
+}
+.page_header {
+    display: flex;
+    justify-content: space-between;
+}
+.page_header p {
+    font-size: 22px;
+}
+.page_header a:visited {
+    color: white;
+}
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    height: 40px;
+}
+.main_nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+.main_nav i {
+    font-size: 30px;
+}
+.main_nav li {
+    margin-left: 20px;
+}
+.heart a:hover {
+    color: indianred;
+}
+.cart a:hover {
+    color: khaki;
+}
+
+
+/* body
+-------------------------*/
+
+/*ログインページ*/
+
+.login {
+    width: 400px;
+    margin: 70px auto 0;
+}
+.login p {
+    margin-bottom: 15px;
+}
+.login a {
+    color: #432;
+    text-decoration: underline;
+}
+.login a:visited {
+    color: #432;
+}
+.login a:hover{
+    text-decoration: none;
+    color: lightblue;
+}
+.login_form {
+    width: 150px;
+    height: 25px;
+    background-color: white;
+    font-size:15px;
+    border:solid 1px lightgray;
+    border-radius: 5px;  
+    padding: 0 10px;
+}
+.login_btn{
+    margin:10px auto 0;
+    width: 200px;
+    background-color: lightgray;
+}
+.login_info {
+    margin-top: 50px;
+}
+
+/* 商品一覧ページ
+-------------------------*/
+
+.item_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    width: 30%;
+    margin: 50px 10px 0;
+}
+.item img {
+    height: 180px;
+    margin:0 auto;
+}
+.item_info {
+    padding:20px 20px 0;
+}
+.item_info p {
+    margin: 0;
+}
+.item .button {
+    margin: 10px auto 0;
+    width: 160px;
+}
+.want_btn{
+    background: indianred;
+}
+.cart_btn{
+    background: lightblue;
+}
+
+/* ページネーション */
+.page {
+    font-size: 20px;
+    margin: 30px 0;
+}
+.page a:visited{
+    color: black;
+}
+.page a:hover{
+    color: lightblue;
+}
+
+/* ほしい物リストページ
+-------------------------*/
+.heart {
+    color: indianred;
+}
+.cart_list .cart_btn {
+    width: 160px;
+}
+
+/* ショッピングカートページ
+-------------------------*/
+.cart_list {
+    margin-top: 4%;
+}
+.cart_list img {
+    height: 150px;
+    margin:0 auto;
+}
+.cart {
+    color: khaki;
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+}
+th, tr {
+    font-weight: normal;
+    border-bottom: 1px solid lightgray;
+}
+th {
+    font-size: 20px;
+}
+.amount_chg,
+.amount_chg_btn {
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.amount_chg {
+    width: 40px;
+    border: solid 1px lightgray;
+}
+.amount_chg_btn{
+    width: 50px;
+    margin: 0 auto 10px;
+    border: 1px solid #432;
+}
+.delete_btn {
+    width: 80px;
+    margin: 0 auto 10px;
+    background-color: lightgray;
+}
+.sum {
+    color: indianred;
+    font-size: 20px;
+}
+.buy_btn {
+    width: 150px;
+    background-color: indianred;
+}
+
+/* 　購入完了ページ
+-------------------------*/
+
+.finish_msg {
+    background: peachpuff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+.bottom {
+    border-bottom: none;
+}
+
+/* 　商品管理ページ
+-------------------------*/
+.insert {
+    margin: 50px 100px 50px;
+}
+.insert p {
+    margin: 10px 0;
+}
+.insert_form,
+.insert_chg {
+    height: 25px;
+    background-color: white;
+    font-size:15px;
+    border:solid 1px lightgray;
+    border-radius: 5px;  
+    padding: 0 10px;
+}
+.insert_form {
+    width: 150px;
+}
+.insert_btn {
+    margin:10px auto 30px;
+    width: 250px;
+    background-color: lightgray;
+}
+.insert_list img {
+    height: 140px;
+}
+.insert_list table,
+.insert_list th,
+.insert_list tr,
+.insert_list td {
+    border:1px solid lightgray;
+}
+.insert_list th{
+    padding: 10px;
+    background-color: lightblue;
+    color: white;
+    font-weight: bold;
+}
+.background {
+    background-color: lightgray;
+}

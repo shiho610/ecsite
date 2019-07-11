@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ショッピングカートページ</title>
+        <link rel="stylesheet" href="./css/shopping.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <span class="logo"><a href="./item_list.php">NANDEMO-YA</a></span>
+                <span class="menu">
+                    ユーザー名: <?php echo $user_name; ?> 
+                    <a href="./want.php" class="heart"><i class="fas fa-heart fa-2x"></i></a>
+                    <a href="./cart.php" class="cart"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    <a href="./logout.php" class="str">ログアウト</a>
+                </span>
+        </header>
+        <section class="cart_list">
+            <h1>ショッピングカート</h1>
+            
+        <?php foreach($err as $value){ ?>
+            <p class><?php echo $value; ?></p>
+        <?php } ?>
+        <?php foreach($msg as $value){ ?>
+            <p class><?php echo $value; ?></p>
+        <?php } ?>              
+            
+            <table>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>価格</th>
+                <th>数量</th>
+                
+                <?php foreach($item_data as $value){ ?>
+                <tr>
+                    <td class="img"><img src="./img/<?php echo $value['img']; ?>"></td>
+                    <td><?php echo $value['name']; ?></td>
+                    
+                    <form method="post">
+                        <td><input type="submit" name="delete" value="削除"></td>
+                        <input type="hidden" name="cart_id" value="<?php echo $value['cart_id']; ?>">
+                    </form>
+                    
+                    <td class="red">¥<?php echo $value['price']; ?></td>
+                    
+                    <form method="post">
+                        <td><input type="text" name="amount_chg" class="amount_chg" value="<?php echo $value['amount']; ?>">個 <input type="submit" value="変更する"></td>
+                        <input type="hidden" name="cart_id" value="<?php echo $value['cart_id']; ?>">
+                        <input type="hidden" name="item_id" value="<?php echo $value['item_id']; ?>">
+                        
+                    </form>
+                </tr>
+                <?php } ?>
+                
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>合計</td>
+                    <td class="sum">¥<?php echo $sum; ?></td>
+                    <td></td>
+                </tr>
+            </table>
+            
+            <form action="./confirm.php" method="post">
+                <div class="submit"><input type="submit" name="buy" class="buy_btn" value="購入する"></div>
+            </form>
+        </section>
+    </body>
+</html>
