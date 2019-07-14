@@ -59,7 +59,7 @@ function err_check($value, $item){
         return $item . 'を入力してください';
         
     } else if(!preg_match('/^([1-9][0-9]*|0)$/', $value) && ($item === '値段' || $item === '個数')){
-        return $item . 'は半角英数字で入力してください';
+        return $item . 'は半角数字で入力してください';
         
     } else if(!preg_match('/^([1-9][0-9]*)$/', $value) && $item === '数量'){
         return $item . 'は1以上の半角数字で入力してください';
