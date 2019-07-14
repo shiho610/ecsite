@@ -31,8 +31,11 @@ a:visited {
     margin: 0 auto;
     padding: 0 4%;
 }
+.message {
+    margin-top:30px;
+}
 .message p {
-    margin: 5%;
+    margin-top: 10px;
     font-size: 20px;
     text-align: left;
 }
@@ -63,6 +66,7 @@ header {
 .page_header p {
     font-size: 22px;
 }
+.page_header a,
 .page_header a:visited {
     color: white;
 }

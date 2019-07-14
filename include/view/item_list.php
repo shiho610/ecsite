@@ -52,19 +52,18 @@
                         <p>¥<?php echo ceil($value['price']); ?>(税込)</p>
                     </div><!-- /.item_info -->
                 
-                    <!--ほしい物リストボタン-->
                 
-                    <form method="post">
-                        <input type="submit" class="button want_btn fas" name="want_btn" value="&#xf004; ほしい">
-                        <input type="hidden" name="item_id" value="<?php echo $value['item_id']; ?>">
-                    </form>
-                
-                <!--カートボタン / 在庫が０でなければカートに入る-->
+                <!--ほしいボタン、カートボタン / 在庫が０でなければカートに入る-->
                 
                     <?php if((int)$value['stock'] === 0){ ?>
                     <p class="red">売り切れ</p>
                     <?php } else { ?>
                     <form method="post">
+                        <!--ほしい物リストボタン-->
+                        <input type="submit" class="button want_btn fas" name="want_btn" value="&#xf004; ほしい">
+                        <input type="hidden" name="item_id" value="<?php echo $value['item_id']; ?>">                        
+                        
+                        <!--カートボタン-->
                         <input type="submit" class="button cart_btn" name="cart_btn" value="カートに入れる">
                         <input type="hidden" name="item_id" value="<?php echo $value['item_id']; ?>">
                     </form>
