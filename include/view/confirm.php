@@ -59,7 +59,7 @@
                     <td><img src="./img/<?php echo $value['img']; ?>"></td>
                     <td><?php echo $value['name']; ?></td>
                     <td></td>
-                    <td class="red">¥<?php echo ceil($value['price']); ?>(税込)</td>
+                    <td class="red">¥<?php echo ceil($value['price']); ?></td>
                     <td><?php echo $value['amount']; ?></td>
                     <input type="hidden" name="cart_id" value="cart_id">
                     <input type="hidden" name="item_id" value="item_id">
@@ -73,8 +73,7 @@
                     <td></td>
                     <td></td>
                     <td>合計</td>
-                    <td class="sum">¥<?php echo ceil($sum); ?>(税込)</td>
-                    <td></td>
+                    <td  colspan="2" class="sum">¥<?php echo ceil($sum); ?>(税込)</td>
                 </tr>
             </table>
         </section><!-- /.cart_list -->

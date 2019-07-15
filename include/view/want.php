@@ -56,7 +56,7 @@
                     <td class="img"><img src="./img/<?php echo $value['img']; ?>"></td>
                     <td><?php echo $value['name']; ?></td>
                     
-                    <td class="red">¥<?php echo ceil($value['price']); ?>(税込)</td>
+                    <td class="red">¥<?php echo ceil($value['price']); ?></td>
                     
                     <td>
                         <!--削除ボタン-->
@@ -80,8 +80,7 @@
                 <tr class="bottom">
                     <td></td>
                     <td>合計</td>
-                    <td class="sum">¥<?php echo ceil($sum); ?>(税込)</td>
-                    <td></td>
+                    <td  colspan="2" class="sum">¥<?php echo ceil($sum); ?>(税込)</td>
                 </tr>
             </table>
             

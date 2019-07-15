@@ -65,7 +65,7 @@
                     <!--個数変更-->
                     
                     <form method="post">
-                        <td><p><input type="text" name="amount_chg" class="amount_chg" value="<?php echo $value['amount']; ?>"> 個</p>
+                        <td><p><input type="text" name="amount_chg" class="amount_chg" value="<?php echo $value['amount']; ?>"></p>
                         <input type="submit" class="amount_chg_btn" value="変更"></td>
                         <input type="hidden" name="cart_id" value="<?php echo $value['cart_id']; ?>">
                         <input type="hidden" name="item_id" value="<?php echo $value['item_id']; ?>">
@@ -74,7 +74,7 @@
                     
                     <!--税込表示-->
                     
-                    <td class="red price">¥<?php echo ceil($value['price']); ?>(税込)</td>
+                    <td class="red price">¥<?php echo ceil($value['price']); ?></td>
                     
                     
                     <!--削除ボタン-->
@@ -90,9 +90,9 @@
                     <!--合計-->
                     
                     <td></td>
-                    <td></td>
                     <td>合計</td>
-                    <td class="sum"><p>¥<?php echo ceil($sum); ?>(税込)</td>
+                    
+                    <td  colspan="2" class="sum"><p>¥<?php echo ceil($sum); ?>(税込)</td>
                     <td>
                         
                         <!--購入ボタン-->
