@@ -43,8 +43,8 @@
     /* 商品一覧ページ
     -------------------------*/
     .item {
-        width: 40%;
-        margin: 30px 5px;
+        width: 45%;
+        margin: 30px 10px;
     }
     .item img {
         height: 120px;
