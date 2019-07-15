@@ -92,8 +92,10 @@
 
     /* 管理者ページ
     --------------------------------*/    
-
+    .insert {
+        margin: 30px 0;
+    }
     .insert_list img {
-        height: 100px;
+        height: 70px;
     }
 }
