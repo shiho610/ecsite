@@ -6,7 +6,7 @@
     }
     .button {
         height: 30px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .message p {
         font-size: 18px;
@@ -42,7 +42,8 @@
     /* 商品一覧ページ
     -------------------------*/
     .item {
-        width: 45%;
+        width: 40%;
+        margin: 30px 5px;
     }
     .item img {
         height: 120px;
@@ -69,11 +70,17 @@
     .cart_list h1 {
         margin-left: 0;
     }
+    .cart_list .cart_btn {
+        width: 100px;
+    }
+    .delete_button {
+        width: 60px;
+    }
     table{
         width: 100%;
     }    
     .sum{
-        font-size: 18px;
+        font-size: 16px;
     }
     .buy_btn {
         width: 100px;
