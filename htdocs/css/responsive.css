@@ -34,6 +34,7 @@
         font-size: 18px;
         font-weight: normal;
         line-height: 80px;
+        margin: 10px;
     }
     .main_nav i {
         font-size: 20px;
@@ -47,6 +48,9 @@
     }
     .item img {
         height: 120px;
+    }
+    .item .button {
+        width: 140px;
     }
     
     /* ほしい物リスト、カートページ
@@ -64,7 +68,7 @@
         margin: 5px 0;
     }
     .cart_list img{
-        height: 80px;
+        height: 70px;
         margin: 0 auto;
     }
     .cart_list h1 {
@@ -83,7 +87,7 @@
         font-size: 16px;
     }
     .buy_btn {
-        width: 100px;
+        width: 110px;
     }
 
     /* 管理者ページ
