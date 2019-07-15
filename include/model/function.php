@@ -139,7 +139,7 @@ function entity_assoc_array($assoc_array){
 function get_db_connect(){
     
     //コネクション開始
-    if(!$link = mysqli_connect(DB_HOST, DB_USER, DB_PASSWD, DB_NAME)){
+    if(!$link = mysqli_connect($dsn, $user, $password, $options)){
         die('error: ' . mysqli_connect_error());
     }
     //文字コード
