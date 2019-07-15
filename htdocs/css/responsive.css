@@ -31,12 +31,12 @@
         margin-bottom: 40px;
     }
     .main_nav li {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: normal;
         line-height: 80px;
     }
     .main_nav i {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     /* 商品一覧ページ
@@ -45,7 +45,7 @@
         width: 45%;
     }
     .item img {
-        height: 140px;
+        height: 120px;
     }
     
     /* ほしい物リスト、カートページ
