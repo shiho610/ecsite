@@ -75,7 +75,7 @@
         margin-left: 0;
     }
     .cart_list .cart_btn {
-        width: 100px;
+        width: 110px;
     }
     .delete_button {
         width: 60px;
@@ -87,7 +87,7 @@
         font-size: 16px;
     }
     .buy_btn {
-        width: 110px;
+        width: 90px;
     }
 
     /* 管理者ページ

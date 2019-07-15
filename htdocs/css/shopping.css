@@ -143,6 +143,7 @@ header {
 .item_list {
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
 }
 .item {
     width: 30%;
