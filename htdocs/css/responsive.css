@@ -93,7 +93,10 @@
     /* 管理者ページ
     --------------------------------*/    
     .insert {
-        margin: 30px 0;
+        margin: 30px 10px;
+    }
+    .insert_list th {
+        font-size:18px;
     }
     .insert_list img {
         height: 70px;
